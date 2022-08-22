@@ -1,0 +1,165 @@
+/* font-family: 'Open Sans', sans-serif; regular version */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --first-color: #00BFD6;
+    --second-color:#DC6170 ;
+    --third-color:#545251;
+    --fourth-color:#FCD365;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--second-color);
+}
+header{
+    text-align: center;
+    padding: 3em;
+    background-color: var(--first-color);
+}
+
+.logo{
+    width: 50%;
+    height: auto;
+}
+
+.local{
+    text-align: center;
+    padding-bottom: 2em;
+    background-color: var(--first-color);
+}
+
+.local h1{
+    color: var(--second-color);
+}
+
+.local p{
+    position: relative;
+    max-width: 70%;
+    left: 15%;
+    margin-top: 2em;
+    font-size: 1.5vw;
+    text-align: left;
+    color: var(--fourth-color) ;
+}
+
+.bikes{
+    text-align: center;
+    background-color: var(--fourth-color);
+
+}
+
+.bike{
+    height: auto;
+    width: 20%;
+}
+
+.signup{
+    background-color: var(--fourth-color);
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.signup h1{
+    color: var(--first-color);
+    padding-bottom: 1em;
+}
+
+.signup label{
+    color: var(--second-color);
+    font-size: 2vw;
+}
+
+.about{
+    background-color: var(--second-color);
+    text-align: center;
+}
+
+.about h1{
+    color: var(--first-color);
+}
+
+.about p{
+    position: relative;
+    max-width: 70%;
+    left: 15%;
+    font-size: 1.5vw;
+    text-align: left;
+    color: var(--fourth-color);
+}
+h1{
+    font-size: 3vw;
+
+}
+
+
+input{
+    width: 20%;
+    border-radius: 25px;
+    font-size: 1vw;
+    color: var(--second-color);
+    background: var(--third-color);
+    border: 0.1vw solid transparent;
+    height: 2em;
+    box-shadow: 0 0 0 1px #dddddd, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%);
+}
+
+@media (max-width: 800px) {
+    .logo{
+        width: 100%; 
+        object-fit: fill;
+    }
+
+    h1{
+        font-size: 6vw;
+
+    }
+
+    .local p{
+        font-size: 2.5vw;
+    }
+
+    .about p{
+        font-size: 2.5vw;
+    }
+    .bike{
+        width: 40%;
+    }
+
+    input{
+        height: 5em;
+    }
+    .about{
+        padding-bottom: 1em;
+    }
+}
+
+
+/* .about {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #DC6170;
+  }
+  .about:after {
+    content: ' ';
+    border-top: 100vh solid #00BFD6;
+    border-right: 100vw solid transparent;
+    width: 0;
+    position: absolute;
+  } */
+/* 
+.bike{
+    position: absolute;
+    width: 41%;
+    height: auto;
+    z-index: 10;
+    transform: rotate(-26deg); 
+    left: 20vw;
+    top: 24vh;
+} */
